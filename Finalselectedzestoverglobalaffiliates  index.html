@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zestover Global Affiliates</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+*{box-sizing:border-box}
+body{
+margin:0;
+font-family:'Inter',sans-serif;
+color:#111827;
+background:
+radial-gradient(circle at top left,#fff7dd 0%,transparent 28%),
+radial-gradient(circle at bottom right,#f6e6a8 0%,transparent 30%),
+linear-gradient(180deg,#ffffff,#fafafa);
+}
+.hero{
+padding:90px 24px;
+text-align:center;
+background:linear-gradient(180deg,#fff,#fffdf7);
+border-bottom:1px solid #ececec;
+}
+.logo{
+width:92px;
+border-radius:20px;
+box-shadow:0 12px 30px rgba(0,0,0,.08);
+}
+h1{font-size:56px;font-weight:800;letter-spacing:-2px;color:#111;margin:20px 0 12px}
+h2{font-size:32px;color:#111;margin-bottom:18px}
+p{max-width:860px;margin:auto;line-height:1.9;color:#4b5563}
+.badge{display:inline-block;background:#d4af37;color:#111;padding:8px 16px;border-radius:999px;font-weight:700;margin:18px 0}
+.btn{display:inline-block;padding:14px 30px;margin:10px;border-radius:999px;text-decoration:none;font-weight:700;transition:.3s}
+.join{background:#111;color:#fff}
+.join:hover{background:#d4af37;color:#111}
+.login{background:#fff;color:#111;border:1px solid #ddd}
+.sec{max-width:1120px;margin:70px auto;padding:0 20px}
+.panel{background:#fff;border:1px solid #ececec;border-radius:22px;padding:34px;box-shadow:0 15px 40px rgba(0,0,0,.05)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+.card{background:#fff;border:1px solid #ececec;border-radius:18px;padding:24px;box-shadow:0 8px 20px rgba(0,0,0,.04);transition:.3s}
+.card:hover{transform:translateY(-6px);box-shadow:0 18px 36px rgba(0,0,0,.08)}
+ul{line-height:2}
+footer{text-align:center;padding:40px;color:#6b7280}
+</style>
+
+<style>
+@media (max-width:768px){
+.hero{padding:48px 16px!important}
+.logo{width:72px!important}
+h1{font-size:30px!important;letter-spacing:-.5px!important;line-height:1.2}
+h2{font-size:22px!important}
+p,li{font-size:15px!important;line-height:1.7!important}
+.btn{display:block!important;width:100%!important;max-width:280px!important;margin:12px auto!important;text-align:center}
+.sec{margin:28px auto!important;padding:0 14px!important}
+.panel{padding:18px!important;border-radius:16px!important}
+.grid{grid-template-columns:1fr!important;gap:14px!important}
+.card{padding:18px!important}
+footer{padding:24px 12px!important;font-size:14px}
+}
+</style>
+
+
+<!-- Security additions -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: 'unsafe-inline' 'unsafe-eval'; img-src * data: https:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com data:;">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+
+<script>
+(function(){
+'use strict';
+document.addEventListener('contextmenu',e=>e.preventDefault());
+document.addEventListener('dragstart',e=>e.preventDefault());
+document.addEventListener('selectstart',e=>e.preventDefault());
+document.addEventListener('keydown',function(e){
+const k=e.key.toUpperCase();
+if(
+e.keyCode===123 ||
+(e.ctrlKey&&e.shiftKey&&['I','J','C'].includes(k))||
+(e.ctrlKey&&['U','S'].includes(k))
+){e.preventDefault();return false;}
+});
+if(window.top!==window.self){window.top.location=window.self.location;}
+setInterval(function(){
+const before=Date.now();
+debugger;
+if(Date.now()-before>100){document.body.innerHTML="<h2 style='font-family:sans-serif;text-align:center;margin-top:40px'>Access blocked</h2>";}
+},1000);
+})();
+</script>
+
+
+<style>
+.card{
+transform-style:preserve-3d;
+perspective:1000px;
+opacity:0;
+transform:translateY(80px) rotateX(18deg) scale(.95)!important;
+transition:transform .8s ease,opacity .8s ease,box-shadow .4s ease!important;
+background:linear-gradient(145deg,#fff,#fff8e7)!important;
+border:1px solid rgba(212,175,55,.35)!important;
+box-shadow:0 18px 45px rgba(0,0,0,.12)!important;
+}
+.card.show{
+opacity:1;
+transform:translateY(0) rotateX(0deg) scale(1)!important;
+}
+.card:hover{
+transform:translateY(-12px) rotateX(-3deg) rotateY(3deg) scale(1.03)!important;
+box-shadow:0 35px 70px rgba(0,0,0,.18)!important;
+}
+.panel{
+overflow:hidden;
+background:rgba(255,255,255,.96)!important;
+backdrop-filter:blur(10px);
+}
+.hero{
+position:relative;
+overflow:hidden;
+}
+.hero:after{
+content:"";
+position:absolute;
+inset:auto -80px -80px auto;
+width:220px;
+height:220px;
+background:radial-gradient(circle,#f7df87,transparent 70%);
+filter:blur(25px);
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded",()=>{
+ const observer=new IntersectionObserver((entries)=>{
+   entries.forEach(entry=>{
+     if(entry.isIntersecting){
+       entry.target.classList.add("show");
+     }
+   });
+ },{threshold:.18});
+ document.querySelectorAll(".card").forEach(c=>observer.observe(c));
+});
+</script>
+
+
+<style>
+.panel{
+opacity:0;
+transform:translateY(45px) scale(.97) rotateX(8deg);
+transition:transform .8s cubic-bezier(.2,.8,.2,1),opacity .8s ease,box-shadow .4s ease;
+transform-style:preserve-3d;
+will-change:transform;
+box-shadow:0 18px 45px rgba(0,0,0,.10),0 8px 18px rgba(212,175,55,.12)!important;
+}
+.panel.visible{
+opacity:1;
+transform:translateY(0) scale(1) rotateX(0);
+}
+.panel:hover{
+transform:translateY(-8px) rotateX(-2deg);
+box-shadow:0 30px 70px rgba(0,0,0,.16),0 10px 28px rgba(212,175,55,.20)!important;
+}
+</style>
+<script>
+document.addEventListener("DOMContentLoaded",()=>{
+ const io=new IntersectionObserver((entries)=>{
+   entries.forEach(e=>{
+     if(e.isIntersecting){e.target.classList.add("visible");}
+   });
+ },{threshold:0.15});
+ document.querySelectorAll(".panel").forEach(el=>io.observe(el));
+});
+</script>
+
+</head>
+<body>
+
+<div class="hero">
+<img class="logo" src="https://i.ibb.co.com/Nd1CJ2xD/Screenshot-2026-06-26-22-51-05-693-gallery-hidepictures-photovault-lockgallery-edit.jpg">
+<h1>🌍 Zestover Global Affiliates</h1>
+<p>
+বিশ্বব্যাপী অ্যাফিলিয়েট মার্কেটিংয়ের মাধ্যমে ঘরে বসেই আয় করুন।
+Zestew Trends-এর পণ্য বিশ্বের বিভিন্ন দেশে শেয়ার করুন এবং সফল প্রতিটি বিক্রয়ে সর্বোচ্চ <b style="color:#d4af37;">২০% কমিশন</b> অর্জন করুন।
+</p>
+<div>
+<a class="btn join" href="https://zestew.goaffpro.com/create-account">একাউন্ট তৈরি করুন</a>
+<a class="btn login" href="https://zestew.goaffpro.com/login">লগইন করুন</a>
+<a class="btn login" href="#">📘 Marketing Tips</a>
+</div>
+</div>
+
+<div class="sec"><div class="panel">
+<h2>Zestew Trends সম্পর্কে</h2>
+<p>
+<b>Zestew Trends</b> হলো <b>Zestover</b>-এর একটি নিজস্ব মালিকানাধীন বিশ্বব্যাপী ই-কমার্স ব্রান্ড, যা আন্তর্জাতিক E-commerce Business পরিচালনা করে।
+USA, UK, Canada, Germany, France সহ বিশ্বের বিভিন্ন দেশের গ্রাহকদের কাছে পণ্য পৌঁছে দেওয়াই এর লক্ষ্য।
+</p>
+</div></div>
+
+<div class="sec"><div class="panel">
+<h2>কিভাবে কাজ করবেন?</h2>
+
+<div class="grid">
+<div class="card">📝 <b>১.</b> একটি Affiliate Account তৈরি করুন।</div>
+<div class="card">🔗 <b>২.</b> আপনার Affiliate Link সংগ্রহ করুন।</div>
+<div class="card">📱 <b>৩.</b> Facebook, TikTok, YouTube, Instagram, WhatsApp ও অন্যান্য মাধ্যমে শেয়ার করুন।</div>
+<div class="card">💰 <b>৪.</b> আপনার লিংক থেকে অর্ডার হলে কমিশন অর্জন করুন।</div>
+<div class="card">💳 <b>৫.</b> কমিশন স্বয়ংক্রিয়ভাবে আপনার Zestover Wallet-এ যোগ হবে।</div>
+<div class="card">🎓 <b>৬.</b> ফ্রি মার্কেটিং টিউটোরিয়াল ও গাইডলাইন অনুসরণ করে দক্ষতা বৃদ্ধি করুন।</div>
+</div>
+
+</div></div>
+
+<div class="sec"><div class="panel">
+<h2>কেন Zestover Global Affiliates এর সাথে যুক্ত হবেন?</h2>
+<div class="grid">
+<div class="card">🌍 নিজের দেশের পাশাপাশি আন্তর্জাতিক মার্কেটে কাজের সুযোগ</div>
+<div class="card">💰 প্রত্যেকটি অর্ডার এ সর্বোচ্চ ২০% কমিশন</div>
+<div class="card">📦 কোনো স্টক বা ডেলিভারির ঝামেলা নেই</div>
+<div class="card">📈 Pannel এ রিয়েল-টাইম কমিশন ট্র্যাকিং</div>
+<div class="card">💳 Zestover Wallet-এ অটো কমিশন</div>
+<div class="card">🔒 নিরাপদ ও সহজ সিস্টেম</div>
+</div>
+</div></div>
+
+<div class="sec"><div class="panel">
+<h2>সচরাচর জিজ্ঞাসিত প্রশ্ন</h2>
+<p><b>প্রশ্ন:</b> যোগ দিতে কি টাকা লাগে?<br><b>উত্তর:</b> না, সম্পূর্ণ ফ্রি।</p>
+<p><b>প্রশ্ন:</b> কোথায় প্রোমোট করতে পারব?<br><b>উত্তর:</b> সোশ্যাল মিডিয়া, ব্লগ, ইউটিউব, ওয়েবসাইটসহ যেকোনো বৈধ প্ল্যাটফর্মে।</p>
+<p><b>প্রশ্ন:</b> কমিশন কোথায় পাব?<br><b>উত্তর:</b> কমিশন আপনার Zestover Wallet-এ যোগ হবে।</p>
+</div></div>
+
+<div class="hero">
+<h2>আজই আপনার Global Affiliate যাত্রা শুরু করুন</h2>
+<p>এখনই অ্যাকাউন্ট খুলুন এবং বিশ্বের বিভিন্ন দেশে পণ্য প্রচার করে আয় শুরু করুন।</p>
+<a class="btn join" href="https://zestew.goaffpro.com/create-account">Join Now</a>
+</div>
+
+<footer>
+© 2026 Zestover Global Affiliates • Powered by Zestew Trends
+</footer>
+
+</body>
+</html>
